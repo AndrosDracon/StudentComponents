@@ -1,6 +1,6 @@
-<!--The content below is only a placeholder and can be replaced.-->
+<app-entry #dataentry></app-entry>
 
-  <app-dataentry></app-dataentry>
-  <app-printdata></app-printdata>
+<app-insert-students [messages]="messages"(InsertStudent)="selectMode($event, dataentry.getStudentRecord())"
+(PrintingEnabled)="selectMode($event)"></app-insert-students>
 
-
+<app-printing [printing]="printing"[studentCollection]="studentCollection"> </app-printing>

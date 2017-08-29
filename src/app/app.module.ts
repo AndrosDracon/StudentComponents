@@ -1,17 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {FormsModule} from '@angular/forms';
+import{FormsModule} from '@angular/forms';
 import { AppComponent } from './app.component';
-import { DataentryComponent } from './dataentry/dataentry.component';
-import { InsertdataComponent } from './insertdata/insertdata.component';
-import { PrintdataComponent } from './printdata/printdata.component';
+import { EntryComponent } from './entry/entry.component';
+import { InsertStudentsComponent } from './insert-students/insert-students.component';
+import { PrintingComponent } from './printing/printing.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataentryComponent,
-    InsertdataComponent,
-    PrintdataComponent
+    EntryComponent,
+    InsertStudentsComponent,
+    PrintingComponent
   ],
   imports: [
     BrowserModule,
